@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Data Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Student Data Dashboard</h1>
+    </header>
+    <div class="upload-section">
+      <input type="file" id="csvFile" accept=".csv">
+      <button id="uploadBtn">Upload and Analyze</button>
+    </div>
+    <div id="loading" style="display: none; text-align: center; color: var(--text);">Loading data...</div>
+    <div class="charts-container">
+      <div id="radialBar" class="chart"></div>
+      <div id="bubbleChart" class="chart"></div>
+      <div id="stackedArea" class="chart"></div>
+      <div id="boxPlot" class="chart"></div>
+      <div id="networkGraph" class="chart"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
